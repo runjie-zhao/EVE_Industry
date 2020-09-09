@@ -6,7 +6,7 @@ import tkinter
 class Industry:
     Nalgfar = 'nalgfar'
 
-#材料
+#材料 （可以有3个subclass： 普矿，月矿，冰，气）
 class Material:
     def __init__(self,Tritanium,Pyerite, Mexallon, Isogen, Nocxium, Zydrine, Megacyte):
         self.Tritanium = Tritanium
@@ -18,7 +18,19 @@ class Material:
         self.Megacyte = Megacyte
 
 #船只种类
-class Nalgfar:
+##class dreadnought:
+##    def __init__ (self, name, cost, estimated profit):
+##
+##class Carrier:
+##
+##class SuperCarrier(Carrier):   子类
+##class FaxCarrier(Carrier):
+##class NormalCarrier(Carrier):
+##
+##class Titan:
+##
+##        
+class Nalgfar(dreadnought):
     material = Material
 
 #蓝图
